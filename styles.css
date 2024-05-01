@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #605757;
+  --sec: #251d1b;
+  --green: rgba(42, 176, 16, 0.895);
+  --red: #d61c23;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  background-color: var(--sec);
+}
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: var(--primary);
+  width: 450px;
+  height: 700px;
+  color: white;
+  padding: 20px;
+  position: absolute;
+}
+.content {
+  display: flex;
+  flex-direction:;
+}
+.lower {
+  padding: 5px;
+  display: none;
+}
+.showTransaction {
+  display: flex;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" -25,
+    "opsz" 24;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" -25,
+    "opsz" 24;
+}
+
+.upper_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.upper_box h1 {
+  font-size: 34px;
+  margin: 10px auto;
+  font-weight: 500;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  line-height: 25px;
+}
+.balance h2 {
+  font-weight: 300;
+  font-size: 25px;
+}
+h3 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.transaction {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #251d1b;
+  font-size: 15px;
+}
+
+.transactions {
+  float: left;
+  width: 410px;
+  overflow-y: auto;
+  height: 280px;
+}
+.transaction_container {
+}
+.left {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: 3px 7px;
+}
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  color:;
+}
+.credit {
+  background-color: var(--green);
+}
+.debit {
+  background-color: var(--red);
+}
+.transaction_form {
+  height: 200px;
+  /* position: relative; */
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.transaction_form h3 {
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.transaction_form label {
+  color: black;
+  font-size: 18px;
+}
+.transaction_form input {
+  padding: 5px 8px;
+  font-size: 15px;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+.form_control:first-child {
+  flex: 2;
+}
+
+.inputs {
+  display: flex;
+  gap: 5px;
+}
+form input {
+  width: 100%;
+}
+form input:focus-visible {
+  outline: 1px solid var(--primary);
+  border: 1px solid var(--primary);
+}
+.buttons_container {
+  display: flex;
+
+  margin-top: 10px;
+  gap: 5px;
+}
+.buttons_container button {
+  width: 100%;
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+}
+.buttons_container button:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+form {
+  margin-top: 30px;
+}
+#earnBtn {
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  padding: 3px;
+}
+#expenseBtn {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  padding: 3px;
+}
+@media (max-width: 500px) {
+  .box {
+    width: 95%;
+  }
+  .form_control {
+    display: flex;
+    flex-direction: column;
+  }
+  .form_control:last-child {
+    flex: 1;
+  }
+}
